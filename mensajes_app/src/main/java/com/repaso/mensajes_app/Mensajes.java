@@ -11,7 +11,11 @@ public class Mensajes {
     private String autor_mensaje;
     private String fecha_mensaje;
     
-    public Mensajes(){
+    public Mensajes(int id_mensaje){
+        this.id_mensaje = id_mensaje;
+    }
+    
+       public Mensajes(){
     }
 
     public Mensajes(int id_mensaje, String mensaje, String autor_mensaje, String fecha_mensaje) {
