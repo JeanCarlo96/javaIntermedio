@@ -37,7 +37,7 @@ public class InicioPersona {
                     PersonaService.borrarPersona();
                     break;
                 case 4:
-                    PersonaService.editarPersona();
+                    PersonaService.editarPersona();2
                     break;
                 default:
                     break;
