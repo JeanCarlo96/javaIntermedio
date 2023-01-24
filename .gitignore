@@ -1,2 +1,5 @@
 /mensajes_app/target/
 /GatosApp/target/
+.DS_Store
+.idea
+*.class
