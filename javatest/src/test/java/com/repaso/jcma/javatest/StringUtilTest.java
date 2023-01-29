@@ -1,15 +1,28 @@
 package com.repaso.jcma.javatest;
-class StringUtilTest {
 
-    public static void main(String[] args) {
+import org.junit.Assert;
+import org.junit.Test;
 
-        String result = StringUtil.repeat("Hola", 3);
-        System.out.println(result);
+public class StringUtilTest {
 
-        if(result.equals("Hola Hola Hola ")){
-            System.out.println("OK");
-        }
+    @Test
+    public void test_string_once() {
+        Assert.assertEquals("Hola", StringUtil.repeat("Hola", 1));
+    }
 
+    @Test
+    public void repeat_string_multiple_times() {
+        Assert.assertEquals("HolaHolaHola", StringUtil.repeat("Hola", 3));
+    }
+
+    @Test
+    public void repeat_string_zero_times() {
+        Assert.assertEquals("", StringUtil.repeat("Hola", 0));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void repeat_string_negative_times() {
+        StringUtil.repeat("Hola", -1);
     }
 
 }
