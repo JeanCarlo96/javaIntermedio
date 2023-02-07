@@ -1,6 +1,7 @@
 /mensajes_app/target/
 /GatosApp/target/
 /calculoDescuentos/target/
+/movieTest/target/
 .DS_Store
 .idea
 *.class
